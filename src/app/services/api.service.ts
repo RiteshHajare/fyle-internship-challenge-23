@@ -12,7 +12,8 @@ export class ApiService {
   ) { }
 
   getUser(githubUsername: string): Observable<Object> {
-    return this.httpClient.get<Object>(`https://api.github.com/users/${githubUsername}`);
+    const res = this.httpClient.get<Object>(`https://api.github.com/users/${githubUsername}`);
+    return res;
   }
 
   // As per shown in image on website.

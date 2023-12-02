@@ -1,4 +1,4 @@
-<div *ngIf="!loader" class="parenthome">
+<div *ngIf="!loader && error == ''" class="parenthome">
   <div class="item"></div>
   <div class="flex relative hometop gap-8 items-center mx-20 my-10">
     <div class="profile-container relative inline-block">
@@ -91,4 +91,10 @@
     [theme]="{ height: '7rem' }"
     *ngIf="loader"
   ></ngx-skeleton-loader>
+</div>
+<div
+  *ngIf="error != ''"
+  class="flex items-center justify-center h-screen text-3xl font-medium"
+>
+  <h1>{{ error }}</h1>
 </div>

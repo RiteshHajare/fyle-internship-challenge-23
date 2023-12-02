@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   constructor(private route: ActivatedRoute, private apiService: ApiService) { }
   loader = true;
   user: any = {};
+  error = "";
   p: number = 1;
   repos: any = [];
   twitterUrl = "https://twitter.com/" + this.user.twitter_username;
@@ -22,12 +23,18 @@ export class HomeComponent implements OnInit {
       const user = params.get('username');
       if (user != null) {
         this.apiService.getUser(user).subscribe(res => {
+          this.error = '';
           this.user = res;
           this.apiService.getRepos(this.user.login).subscribe(repos => {
             this.repos = repos;
             this.loader = false;
           });
-        })
+        },
+          (error) => {
+            this.error = error.error.message;
+            this.loader = false;
+          }
+        )
 
       }
 
