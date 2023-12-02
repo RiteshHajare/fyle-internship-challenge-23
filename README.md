@@ -1,43 +1,28 @@
 # Fyle Frontend Challenge
 
-## Who is this for?
+## Start the Webapp
 
-This challenge is meant for candidates who wish to intern at Fyle and work with our engineering team. The candidate should be able to commit to at least 6 months of dedicated time for internship.
+`cd` to the location and run `ng serve` inside the folder location in terminal to to start the Webapp.
 
-## Why work at Fyle?
+- Kept the UI of the application as shown in image in website.
+- Skeleton loader is used to show the loading process while fetching the user data from web.
+- Website is Responsive.
+- Per-page 10 repositories shown.
 
-Fyle is a fast-growing Expense Management SaaS product. We are ~40 strong engineering team at the moment. 
+## Packages used:
 
-We are an extremely transparent organization. Check out our [careers page](https://careers.fylehq.com) that will give you a glimpse of what it is like to work at Fyle. Also, check out our Glassdoor reviews [here](https://www.glassdoor.co.in/Reviews/Fyle-Reviews-E1723235.htm). You can read stories from our teammates [here](https://stories.fylehq.com).
+- ngx-skeleton-loader
+- ngx-pagination
 
-## Challenge outline
+### CSS done in Tailwind.
 
-This challenge involves implementing application using github api. 
+## Test the Webapp
 
-The services that you need to use are already implemented - check out ApiService.
+### Testing of home component and api service is performed (1 component and 1 service as per requirement).
 
-You can see details of this challenge [here](https://fyleuniverse.notion.site/fyleuniverse/Fyle-Frontend-development-challenge-cb5085e5e0864e769e7b98c694400aaa)
+- Inside the folder location run `ng test` in terminal.
+- Karma tab will be automatically opened in the browser.
+- Home Component and Api Service tests are visible and passed as expected.
+- 100% code is covered in testing for both the component and service.
 
-__Note__ - This challenge is in angular. We work on angular frameworks & after you join we expect the same from you. Hence it is required to complete this assignement in angular itself.
-
-## What happens next?
-
-You will hear back within 48 hours from us via email.
-
-## Installation
-
-1. Fork this repository to your github account.
-2. Clone the forked repository and proceed with steps mentioned below.
-
-### Install requirements
-* Install angular cli [Ref](https://angular.io/cli)
-* `npm install` in this repository 
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-## Further help
-
-Visit the [Angular Documentation](https://angular.io/guide/styleguide) to learn more.
-Styling is to be strictly done with [Tailwind](https://tailwindcss.com/docs/installation).
+# [LINK](https://github-user-search-fyle.netlify.app/) for the web application.

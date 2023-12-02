@@ -1,0 +1,20 @@
+div{
+    margin: 0;
+    background-color: #23272b ;
+}
+
+input{
+  padding-left: 0.5rem;
+}
+  /* Lift effect on hover */
+  .lift-button:hover {
+    transform: translateY(-5px);
+  }
+  @media screen and (max-width: 547px) {
+    input{
+      width: 80%;
+    }
+    button{
+      width: 30%;
+    }
+  }

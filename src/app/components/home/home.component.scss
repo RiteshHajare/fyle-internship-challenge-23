@@ -1,0 +1,81 @@
+.img::after{
+    content: "";
+    background-color: black;
+    width: 2px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 100;
+}
+.parenthome{
+    border:2px solid black;
+    margin: 0.5rem;
+    min-height: 100vh;
+}
+
+.facebook-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+.customgrid{
+    grid-template-columns: repeat(2,1fr);
+   grid-template-rows: repeat(3,1fr);
+}
+
+@media screen and (min-width: 548px) {
+    .hometop::after{
+        content: '';
+        position: absolute;
+        top: -10%;
+        left: -2%;
+        border: 1px solid black;
+        box-sizing: border-box;
+        width: 104%;
+        height: 120%;
+    }
+  }
+@media screen and (max-width: 547px) {
+    .hometop{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+    .imageboxloader{
+        display: block;
+    }
+    
+    .customgrid{
+        padding: 1rem;
+    }
+
+    .gitlink{
+        justify-content: center;
+        margin: 0;
+    }
+    .userdetails{
+        justify-content: center;
+    }
+    .userdetails h1{
+        text-align: center;
+    }
+  }
+@media screen and (max-width: 978px) {
+    .customgrid{
+        display: block !important;
+    }
+
+  }
+.profile-container::after {
+    content: '';
+    position: absolute;
+    top: -4%;
+    left: -4%;
+    width: 108%;
+    height: 108%;
+    border-radius: 50%;
+    border: 2px solid rgb(174, 172, 172); /* Adjust the border properties as needed */
+    box-sizing: border-box;
+  }

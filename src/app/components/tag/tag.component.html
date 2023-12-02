@@ -1,0 +1,11 @@
+<span
+  class="text-white font-medium bg-blue-600 w-fit px-2 h-8 flex justify-center items-center rounded break-words"
+>
+  {{
+    tag.length > 10
+      ? tag.charAt(tag.length - 2) == "+"
+        ? tag.slice(0, 8) + " " + tag.slice(tag.length - 2, tag.length) + "..."
+        : tag.slice(0, 8) + " " + "..."
+      : tag
+  }}
+</span>

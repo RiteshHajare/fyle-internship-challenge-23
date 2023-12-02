@@ -1,0 +1,22 @@
+<div
+  class="repo flex flex-col gap-4 border-solid border-black border-2 p-4 break-words"
+>
+  <h1 class="text-3xl text-blue-600">
+    {{ item.name.length > 31 ? item.name.slice(0, 31) + " ..." : item.name }}
+  </h1>
+  <p>
+    {{
+      item.description
+        ? item.description.length > 70
+          ? item.description.slice(0, 70) + " ..."
+          : item.description
+        : "Not Available"
+    }}
+  </p>
+  <div class="tags w-full flex justify-start gap-4">
+    <div class="inline-block" *ngFor="let tag of item.topics">
+      <app-tag [tag]="tag"></app-tag>
+    </div>
+    {{ item.topics && item.topics.length == 0 ? "No Topics mentioned" : "" }}
+  </div>
+</div>

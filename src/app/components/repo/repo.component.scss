@@ -1,0 +1,21 @@
+.repo{
+    width: 100%;
+    height: 11rem;
+}
+
+@media screen and (max-width: 978px) {
+    .repo{
+        margin-bottom: 1rem !important;
+    }
+
+  }
+@media screen and (max-width: 633px) {
+    .repo{
+        margin-bottom: 1rem !important;
+        height: fit-content;
+    }
+    .repo h1{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+  }
