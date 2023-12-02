@@ -6,8 +6,11 @@
 
 - Kept the UI of the application as shown in image in website.
 - Skeleton loader is used to show the loading process while fetching the user data from web.
-- Website is Responsive.
+- Website is fully Responsive.
 - Per-page 10 repositories shown.
+- Well-formed is the Folder Structure.
+- Readable and clean code.
+- Best practices are followed.
 
 ## Packages used:
 
