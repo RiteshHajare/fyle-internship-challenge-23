@@ -8,7 +8,7 @@
 - Skeleton loader is used to show the loading process while fetching the user data from web.
 - Website is fully Responsive.
 - Per-page 10 repositories shown.
-- Well-formed is the Folder Structure.
+- Folder Structure is Well-formed.
 - Readable and clean code.
 - Best practices are followed.
 
